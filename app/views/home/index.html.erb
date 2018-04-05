@@ -1,0 +1,12 @@
+<h1>주문하기</h1>
+
+
+<form action="home/order/" method="post">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  주문자: <input type="text" name="person"><br>
+  주문 물품: <input type="text" name="product"><br>
+  음료수: <input type="text" name="drink"><br>
+  사이즈 업: <input type="text" name="sizeup"><br>
+  
+  <input type="submit" value="Submit">
+</form>
